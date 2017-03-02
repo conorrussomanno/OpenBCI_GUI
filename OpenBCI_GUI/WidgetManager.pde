@@ -20,6 +20,7 @@ W_networking w_networking;
 W_ganglionImpedance w_ganglionImpedance;
 W_template w_template1;
 W_emg w_emg;
+W_alphaSerial w_alphaSerial;
 W_openBionics w_openbionics;
 
 //ADD YOUR WIDGET TO WIDGETS OF WIDGETMANAGER
@@ -58,6 +59,10 @@ void setupWidgets(PApplet _this, ArrayList<Widget> w){
   w_template1 = new W_template(_this);
   w_template1.setTitle("Widget Template 1");
   addWidget(w_template1, w);
+
+  w_alphaSerial = new W_alphaSerial(_this);
+  w_alphaSerial.setTitle("Alpha Serial");
+  addWidget(w_alphaSerial, w);
 
   // w_template2 = new W_template(_this);
   // w_template2.setTitle("Widget Template 2");

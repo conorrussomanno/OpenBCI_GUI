@@ -333,7 +333,7 @@ void setup() {
     serial_output = new Serial(this, serial_output_portName, serial_output_baud); //open the com port
     serial_output.clear(); // clear anything in the com port's buffer
   }
-  catch (RuntimeException e) {
+  catch(RuntimeException e){
     verbosePrint("OpenBCI_GUI.pde: could not open " + serial_output_portName);
   }
 
